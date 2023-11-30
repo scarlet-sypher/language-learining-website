@@ -1,0 +1,713 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Main css</title>
+    <link rel="stylesheet" href="style_mian.css">
+</head>
+<body>
+
+    <pre>Types of things we can use to select the elements(selectors) to edit in css</pre>
+    <pre>1. Class(class="_name_")(used->.(dot to access))
+        2. id
+    </pre>
+    <hr>
+    <p class="ptag">this is the class access with a dot(.)</p>
+    <hr>
+
+
+    
+    <pre>Suppose we want to style a group of elements together with same prop so we use div tag(div)</pre>
+    <pre>we will use class name for the div as there will be so many div that we will get confused</pre>
+    <br>
+    <div class="divtag">
+        <h1>heading 1</h1>
+        <p>this is under a same div</p>
+        <botton type="submit">submit</botton>
+        <pre>backgr0ound color takes 3 types of value for color i.e
+                   1.color_name
+
+                   2.rgb(red_value,green_value,blue_value)--max value(255)
+
+                   3.rgba(red_value,green_value,blue_value,opacity_value)--opacity(1-full visiable to 0-transparent)
+
+                   4.hexa code--#FFFFFF (fist 2 place for red, second 2 place for green, third 2 place for blue) [takes hexa decimal values i.e 0-9 and A-F]
+
+                   5.hsl(hue/color,saturation,lightness)--hue_value=0-360[0-red,120-green,360-blue]
+                                                          saturation_value=0%-100%[0%-completely black,100%-completely white]
+                                                          lightness_value=0%-100%[0%-completely black,100%-completely white]
+
+                   6.hsla(hue/color,saturation,lightness,opacity_value)--opacity (1-full visiable to 0-transparent)
+
+        </pre>
+    </div>
+    <hr>
+
+    <div class="attribute1">
+        <pre>different type of background
+              <s>1.background--for bg color</s>
+              2.background-color--for bg color
+              3.background-image:url(image_name.extetation(19x20px for full scren image)) 
+                                 linear-gradiant(top_color_1 percentage%, bottom_color_2 percentage%)
+
+              4.background-repeat: none (for small image not to repeat)
+              5.background-position: center (keyword/x-scale/keyword/y-scale)
+              6.background-size: cover (cover/auto/contain/length/%)
+              7.background-attachnment: scroll (fixed/scroll/local)
+              8.background-origin: (border-box/padding-box/content-box)
+              9.background-clip: (border-box/content-box/padding-box/text)
+              10. background: [bg-color] [bg-img] [bg-repeat] [bg-attachnment] [bg-position] [bg-size] [bg-clip] [bg-origin]          
+        </pre>
+
+    </div>
+    <hr>
+    <br>
+
+    <div class="attribute2">
+        <pre>different type of border
+            1. border-style: solid(none/hidden/dotted/dashed/solid/double/groove/ridge/inset/outset)
+                        a. border-top-style: value
+                        b. border-right-style: value
+                        c. border-left-style: value
+                        d. border-bottom-style: value
+
+            2. border-width: 2px (px,em,rem/thick,thin,medium)
+                        a. border-top-width: value
+                        b. border-right-width: value
+                        c. border-left-width: value
+                        d. border-bottom-width: value
+
+            3. border-color: (different color values)
+                        a. border-top-color: value
+                        b. border-right-color: value
+                        c. border-left-color: value
+                        d. border-bottom-color: value
+
+            4. border-radius: (px/em/rem)
+                        a. border-top-left-radius: value
+                        b. border-top-right-radius: value
+                        c. border-bottom-left-radius: value
+                        d. border-bottom-right-radius: value
+
+
+            5. border: [style] [color] [width] <b>--Note--:border-radius not included in this attribute shortcut</b>
+
+
+        </pre>
+
+    </div>
+    <hr>
+
+    <div class="attribute3">
+        <pre>cursor tag
+            whenever we take the cursor on that part then the arrow will change into hands
+
+            1. cursor: pointer/not-allowed/all-scroll/cell/col-resize....etc;
+        </pre>
+    </div>
+
+    <hr>
+
+    <div class="attribute4">
+        <pre>              float tag
+            the whole class under this attribute will shift to the side that is specified in it
+
+            1. float: right (right/left)
+        </pre>
+    </div>
+
+    <hr>
+
+    <div class="attribute5">
+
+        <pre>display
+
+             didn't got much
+
+        </pre>
+    </div>
+
+    <hr>
+    <div class="attribute6">
+
+        <pre>visibility
+            
+            content seen or not 
+
+            1. visibility: hidden/collapse/visiable
+            (cant use hiddden value for now xD)
+
+        </pre>
+    </div>
+
+    <hr>
+
+    <div class="attribute7">
+
+        <pre>dimension using bg color as well to see changes
+             1. width: 200px;
+             2. height: 200px;
+             3. min-width: 100px; (the minimum size of the div/group that will be fixed and wont reduce below that)
+             4. line-height: 30px; (distance between two consicutive line) (the dist betten the lines displayed is due this)
+        </pre>
+    </div>
+
+    <hr>
+    
+    <div class="attribute8">
+
+        <pre>font attributes
+
+            1. font-size: 15px (20px/small/xx-small/x-small/medium/large/x-large/xx-large);
+            2. font-style: oblique (normal/italic/oblique)
+            3. font-family: cursive (cursive/fantasy/monotype/sans-serif/serif...etc)
+            4. font-weight: bold (bold/normal/lighter/bolder/1-1000 any number) --note--: No px defined
+
+        </pre>
+    </div>
+
+
+    <hr>
+
+    <div class="attribute9">
+
+        <pre>how to style unorder list
+             1. list-style: none; (none[To remove the points from the list]/square/circle/disc)
+
+        how to style order list
+             1. list-style: none; (none[To remove the points from the list]/1/i/I/a/A)
+
+
+        </pre>
+
+        <h1>unorder list</h1>
+        <ul>
+            <li>one</li>
+            <li>two</li>
+            <li>three</li>
+            <li>four</li>
+            <li>five</li>
+        </ul>
+
+        <h2>Ordered list</h2>
+        <ol>
+            <li>one</li>
+            <li>two</li>
+            <li>three</li>
+            <li>four</li>
+            <li>five</li>
+        </ol>
+
+    </div>
+
+    <hr>
+
+    <div class="attribute10">
+
+        <pre>spacing attributes
+            <i>we r addinng border as well to see the visiable change properly</i>
+
+            1.margin: 40px; (adds 40px space form  all outside of the border area and shifts the border/div)<b> form outside border line</b>
+                            a. margin-top: value
+                            b. margin-right: value
+                            c. margin-left: value
+                            d. margin-bottom: value
+                            e. margin: [top] [right] [bottom] [left] or [top] [bottom] or [top] [right/left] [bottom]
+
+            2. padding: 40px; (adds 40px space form  all inside of the border area and shifts the content)<b>from inside border line</b>
+                            a. padding-top: value
+                            b. padding-right: value
+                            c. padding-left: value
+                            d. padding-bottom: value
+                            e. padding: [top] [right] [bottom] [left] or [top] [bottom] or [top] [right/left] [bottom]
+
+
+        </pre>
+    </div>
+
+    <hr>
+
+    <div class="attribute11">
+
+        <pre>outline attribute
+
+            the box that appears around the input area after we click inside the box
+
+            1. outline: red 10px groove;     [style] [color] [width]; <b>--note-- outline-offset not here</b>
+            2. outline-color: red;
+            3. outline-offset: 10px; (after clicking the input box the border of the box will expand to the spcified value)
+            4. outline-style: groove; (none/hidden/dotted/dashed/solid/double/groove/ridge/inset/outset)
+            5. outline-width: 10px
+            
+        </pre>
+
+        <input type="text" placeholder="name">
+
+
+
+    </div>
+
+    <hr>
+
+    <div class="attribute12">
+        <pre>text attributes
+
+            the Property to change all the property of text and this is just a sample txt to show the change
+            
+            1. text-align: center; (cenetr/left/right/justify) (text position)
+            2. text-decoration: underline solid green 2px;    [line] [style] [color] [thickness]
+                         a. text-decoration-line: underline/overline/line-through/overline-underline
+                         b. text-decorarion-color: red
+                         c. text-decoration-style: solid/double/dotted/dashed/wavy
+                         d. text-decorarion-thickness: 10px
+
+            3. text-transformation: capitalize; (capitalize/none/uppercase/lowercase)
+            4. letter-spacing: 3px; (space between the letters) <b>(the space between all the letter is due to this)</b>
+            5. word-spacing: 30px; (space between each word)  <b>(the space between all words is due to this)</b>
+            6. text-shadow: 2px 4px 6px blue;  order matters-> [horizonal-offset] [vertical-offset] [blur-radius] [color] <b>(the effect is due to this tag)</b>
+                                                              ~shadow move in x    ~shadow move in y  ~blur   
+
+            7. text-overflow: clip; (clip-half letter at the end/ellipsis-... effect) #
+            8. text-indent: hanging; (hanging/each-line,px) # 
+            9. white-space: nowrap,pre,pre-wrap,pre-line,break
+
+        </pre>
+
+        <p>this is a sample text the text is edited</p>
+        <p>ptn is that we cannot style the text inside the pre tag that's why we use p tag coz its stylable</p>
+
+    </div>
+    <br>
+    <hr>
+    <br>
+
+    <pre>different type of selectors :-
+         1. nested div
+         2. active
+         3. focus
+         4. hover
+         5. first-child
+         6. last-child
+         7. nth-child
+
+    </pre>
+
+    <p>********************************************Nested divs*****************************************</p>
+    <pre>This is how to access the diff type of property under divs <b>very imp </b></pre>
+
+    <div class="out">
+        <div class="in">
+            <p>there are 2 div here and this is how we access p (font, color change)</p>
+            <pre>.out .in p{
+                  <i><u>no comma</u></i>
+                  font-size: 20px;
+                  color:blueviolet;
+                }</pre>
+        </div>
+    </div>
+
+    <br>
+    <p>********************************************hover*****************************************</p>
+    <div class="hov_effect">
+        <pre>this is how hover works</pre>
+
+        <p>Move your cursor over this text</p>
+        <pre>.hov_effect p:hover {
+            color:aqua;
+            font-weight: bold; 
+            font-size: large;
+        }
+        </pre>
+    </div>
+    <br>
+    <p>********************************************relative/absolute position****************************</p>
+
+    <pre>with the use of this tag you can control the position the parent(out)div and child(in)div</pre>
+    <pre>syntax---> position: relative/absolute;</pre>
+    <pre>with this line you have also unlocked propertis like:-
+            1. top: value
+            2. bottom: value
+            3. right: value
+            4. left: value
+
+        this is used to set the position of the of the selectors that has position value absolute
+
+        <u>note:- position:absolute moves wrt position:relative</u>
+
+    </pre>
+    <div class="out1">
+        <div class="in1">
+            <p>see the position , we have used color as well to track</p>
+        </div>
+    </div>
+    <pre>.out1 {
+        width: 600px;
+        height: 200px;
+        background-color: yellow;
+        margin: 100px auto;
+        position: relative;
+    }
+    
+    .in1 {
+        width: 200px;
+        height: 100px;
+        background-color: blueviolet;
+        color:chartreuse;
+        position: absolute;
+    
+        top:10px;
+        right: 10px;
+    }</pre>
+
+    <br>
+    <pre>note:- you will have to set the position: relative of the parent(out) div or else by default the position will be relative with laptop screen</pre>
+    <pre>eg</pre>
+    <div class="out2">
+        <p>no relative positon given</p>
+        <div class="in2">
+            <p>ignore this you will get it later why its here</p>
+            <p>its here coz we have not given relative position so its taking relative position as screen</p>
+        </div>
+    </div>
+    <pre>.out2 {
+        width: 600px;
+        height: 1000px;
+        background-color: yellow;
+        margin: 100px auto;
+        
+    }
+    
+    .in2 {
+        width: 200px;
+        height: 500;
+        background-color: blueviolet;
+        color:chartreuse;
+        position: absolute;
+    
+        top:10px;
+        right: 10px;
+    }</pre>
+    
+    <br>
+    <p>********************************************active pesudo selector****************************</p>
+
+    
+    <pre>active pesudo selector</pre>
+    
+    <div class="active">
+        not much but brings the two boxes like This
+
+
+
+    </div>
+    <pre>
+        .active {
+            width: 500px;
+            height: 300px;
+            background-color: chocolate;
+            margin: 100px auto;
+            position: relative;
+        }
+        
+        .active::after{
+            content:"type_anything";
+            width: 100px;
+            height: 50px;
+            background-color: burlywood;
+            position:absolute;
+            <b>left</b>:-10px;
+            <b>top</b>:-10px;
+        
+        }
+        
+        .active::before{
+            content: "type_anythind2";
+            width: 100px;
+            height: 50px;
+            background-color: burlywood;
+            position:absolute;
+            <b>right</b>: -10px;
+            <b>bottom</b>:-10px;
+        }
+    </pre>
+
+
+    <br>
+    <hr>
+    <br>
+    <pre>display-flex</pre>
+
+    <pre>with no display flex this is what we have</pre>
+    
+    <div class="out5">
+        <div class="in5">
+            <p>1</p>
+        </div>
+        <div class="in5">
+            <p>2</p>
+        </div>
+        <div class="in5">
+            <p>3</p>
+        </div>
+        <div class="in5">
+            <p>4</p>
+        </div>
+    </div>
+
+    <pre>.out5 {
+        width:700px;
+        height:700px;
+        background-color: coral;
+        margin:50px auto;
+    
+    }
+    
+    .in5 {
+        width: 150px;
+        height: 150px;
+        background-color: darkgreen;
+        font-size: 24px;
+        color:gold;
+    }
+    
+    
+    .in5:nth-child(1) {
+    
+        background-color: aqua;
+    
+    }
+    .in5:nth-child(2) {
+        background-color:rgb(255, 0, 234);
+    }
+    
+    .in5:nth-child(3) {
+        background-color: blue;
+    }
+    
+    .in5:nth-child(4){
+        background-color: rgb(0, 255, 17)
+    }
+    </pre>
+
+    <pre>===============================================================================================================-</pre>
+
+    <pre>with only display flex
+        1. display:flex;
+    </pre>
+
+    <div class="out6">
+        <div class="in6">
+            <p>1</p>
+        </div>
+        <div class="in6">
+            <p>2</p>
+        </div>
+        <div class="in6">
+            <p>3</p>
+        </div>
+        <div class="in6">
+            <p>4</p>
+        </div>
+    </div>
+
+    <pre>Everythng is aligned in row</pre>
+
+    <pre>.out6 {
+        width: 700px;
+        height: 700px;
+        background-color: chartreuse;
+        margin:  auto;
+        display:flex;
+        
+    }
+    
+    .in6 {
+        width:100px;
+        height:100px;
+        background-color: crimson;
+        font-size: 30px;
+        color: blue;
+        text-align: center;
+        
+    }
+    
+    .in6:nth-child(1) {
+        background-color: red;
+    }
+    
+    .in6:nth-child(2) {
+        background-color: tomato;
+    
+    }
+    
+    .in6:nth-child(3) {
+        background-color:saddlebrown;
+    }
+    
+    .in6:nth-child(4) {
+        background-color:rgb(159, 5, 242)
+    }</pre>
+
+    <pre>==========================================================================================================================-</pre>
+
+    <pre>with display flex we have also unlocked
+             1.flex-basis:50%   (allows a particular div to enlonggate within the row)
+             2.flex:1      (means it will cover the entire left over space in that row)
+
+    </pre>
+
+    <div class="out7">
+        <div class="in7">
+            <p>1</p>
+        </div>
+        <div class="in7">
+            <p>2</p>
+        </div>
+        <div class="in7">
+            <p>3</p>
+        </div>
+        <div class="in7">
+            <p>4</p>
+        </div>
+    </div>
+
+    <pre>.out7 {
+        width:700px;
+        height:700px;
+        background-color:black;
+        display:flex;
+        margin:auto;
+    
+    }
+    
+    .in7 {
+        width:100px;
+        height: 100px;
+        font-size:30px;
+        color:blue;
+        background-color:tan;
+    
+    }
+    
+    .in7:nth-child(1) {
+        background-color:tan;
+        flex-basis:40%;
+    }
+    
+    .in7:nth-child(2) {
+        background-color:springgreen;
+        flex-basis:20%;
+    }
+    
+    .in7:nth-child(3) {
+        background-color: red;
+        flex-basis:10%
+    }
+    
+    .in7:nth-child(4) {
+        background-color: orange;
+        flex:1;
+    }</pre>
+
+
+    <pre>Flex grow part left rest done</pre>
+
+
+    <br>
+    <hr>
+    <pre>hover effect</pre>
+    <div class="effect">
+        <div class="inside">
+            <p>move cursor here</p>
+        </div>
+    </div>
+    <pre>.effect {
+        width:700px;
+        height:500px;
+        background-color: orange;
+        margin: 50% auto;
+    
+    }
+    
+    .inside {
+        width: 200px;
+        height:100px;
+        background-color:blueviolet;
+        font-size:larger;
+        color:yellow;
+        transition: 1s;
+    
+    }
+    
+    .inside:hover {
+    
+        color:rgb(227, 159, 111);
+        background-color: rgb(110, 26, 111);
+    }</pre>
+
+    <br>
+    <hr>
+
+    <pre>animation effect</pre>
+
+
+    <pre>basic animation only nothing much
+
+         1. animation: motion 5s liner infinite;   [name_of_animaiton(any)] [duration] [movement_type] [run_how_much_time]
+
+         --for this motion(animaiton_name) we have to create a keyframe--
+         2. @keyframes motion {
+                    100%{
+                        transform: translateX(value in px) --or--
+                                   translateY(value in px) --or--
+                                   translate(value_X,value_y)
+                                    
+                    }
+         }
+
+         --when the moiton is 100% completed then move in X/Y--
+    </pre>
+
+
+    <div class="aniout">
+        <div class="aniin">
+            <p>this is what will animate</p>
+        </div>
+    </div>
+
+    <pre>.aniout {
+        width:700px;
+        height: 800px;
+        background-color:red;
+        margin: 100%;
+    }
+    
+    .aniin {
+        width: 200px;
+        height:200px;
+        background-color:rgb(0, 255, 17);
+        color:rgb(49, 4, 100);
+        animation: motion 2s linear infinite;;
+    }
+    
+    @keyframes motion {
+        100% {
+            transform: translate(400px, 400px);
+        }
+        
+    }</pre>
+
+
+
+
+
+
+
+
+
+
+
+
+</body>
+</html>

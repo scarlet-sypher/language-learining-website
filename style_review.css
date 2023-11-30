@@ -1,0 +1,130 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    display: flex;
+    height: 100vh;
+    background-color: black;
+}
+
+.rev-section {
+    margin:auto;
+    padding: 0 1rem;
+    max-width: 1100px;
+    text-align: center;
+}
+
+.title {
+    
+    color: rgb(255, 255, 255);
+    margin-bottom: .5rem;
+    margin-top:60px;
+    font-size: 50px;
+    border:4px solid gray;
+    border-radius: 20px;
+    font-weight: 800;
+}
+
+.title:hover {
+    background-color: grey;
+    color: yellow;
+    
+}
+
+.note {
+    font-size: 1.1rem;
+    color:blue;
+    font-style: italic;
+    margin-top: 50px;
+
+}
+
+.reviews {
+    margin: 2rem auto;
+    display: flex;
+    flex-wrap: wrap;
+
+}
+
+.review {
+    margin:0 1rem;
+    min-width: 300px;
+    flex: 1;
+    margin-top:50px;
+    margin-bottom: 50px;
+
+}
+
+.head-review {
+    margin: 1.75rem auto;
+    width:150px;
+    height: 150px;
+}
+img {
+    width:100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 50%;
+    box-shadow: 0 10px 25px rbga(0,0,0,255,0.5);
+
+}
+
+.body-review {
+    background-color: rebeccapurple;
+    padding:2.5rem;
+    box-shadow: 2px 2px 10px 3px rgb(255,255,0);
+
+}
+
+.name-review {
+    font-size: 1.5rem;
+    color: rgb(255,255,0);
+    margin-bottom: .25rem;
+
+}
+
+.place-review {
+    color: red;
+    font-style: italic;
+}
+
+.rating {
+    color: chocolate;
+    margin: 1rem 0;
+
+}
+
+.desc-review {
+    line-height: 1.5rem;
+    letter-spacing: 1px;
+    color:rgb(180, 180, 116);
+
+}
+
+
+.go_back {
+    margin:100px;
+    padding: 5px;
+
+}
+
+.go_back a{
+    border: 5px solid rgb(26, 167, 206);
+    padding:20px;
+    border-radius: 30px;
+    text-decoration: none;
+    color:white;
+    font:icon;
+    font-size: 20px;
+
+}
+
+.go_back a:hover {
+    background-color: rgb(26, 167, 206);
+    color:black;
+    font-weight: bolder;
+}
+

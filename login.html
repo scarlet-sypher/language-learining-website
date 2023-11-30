@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>login</title>
+    <link rel="stylesheet" href="style_1.css">
+    <script src="https://kit.fontawesome.com/ce741371cb.js" crossorigin="anonymous"></script>
+</head>
+<body style="background-image: url(UchihaSenjuTruce.webp);">
+    <div class="sign_up">
+        <div class="form_b">
+            <h1 id="tttt">Sign Up</h1>
+            <form action="">
+                <div class="input_group">
+
+                    <div class="input_field" id="nameF">
+                        <i class="fa-solid fa-user"></i>
+                        <input type="text" placeholder="Full Name">
+                    </div>
+
+                    <div class="input_field">
+                        <i class="fa-solid fa-envelope"></i>
+                        <input type="email" placeholder="E-Mail">
+                    </div>
+
+                    <div class="input_field">
+                        <i class="fa-solid fa-lock" style="color: #000000;"></i>
+                        <input type="password" placeholder="Passowrd">
+                    </div>
+
+                    <div class="input_field">
+                        <i class="fa-solid fa-circle-user"></i>
+                        <input type="text" placeholder="User-ID">
+                    </div>
+                    <p>Forgot Password?<a href="">Click Here!</a></p>
+                </div>
+
+                <div class="two">
+                    <button type="button" id="ssss">Sign up</button>
+                    <button type="button" class="disable" id="ssss1">Log in</button>
+                </div>
+            </form>
+        </div>
+
+    </div>
+
+    <script>
+        let ssss=document.getElementById("ssss");
+        let ssss1=document.getElementById("ssss1");
+        let nameF=document.getElementById("nameF");
+        let tttt=document.getElementById("tttt");
+
+
+        ssss1.onclick=function() {
+            nameF.style.maxHeight = "0";
+            tttt.innerHTML = "Log In";
+            ssss.classList.add("disable");
+            ssss1.classList.remove("disable");
+
+        }
+
+        ssss.onclick=function() {
+            nameF.style.maxHeight = "60px";
+            tttt.innerHTML = "Sign Up";
+            ssss.classList.remove("disable");
+            ssss1.classList.add("disable");
+
+        }
+    </script>
+</body>
+</html>

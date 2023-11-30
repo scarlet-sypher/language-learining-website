@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+</head>
+<body>
+    <hr>
+    <pre>This are all the things used along with form tag :-
+
+        the main form tag (form)
+
+        A) input(input)
+                1. type--email,text,password,radio,check-box,file,submit,etc
+                2. placeholder--faded text
+                3. required/blank-- for must needed field
+                4. checked-- for aut tick part in radio button
+
+        b) name for input tag label(label)
+
+        c) drop down(select)
+                1. options in drop down(options)
+
+        
+
+        D) large text area(textarea)
+
+        E) to submit the form (button) there are various method
+
+                1. type=submit-- to submit form
+                2. type=reset-- to reset form
+
+        F) inside a name box(fieldset,legend) combo
+
+    </pre>
+    <hr>
+
+    <form>
+        <label>User name</label>
+        <input type="text" placeholder="User name" required><br>
+        <label>email</label>
+        <input type="email" placeholder="email" required><br>
+        <label>Password</label>
+        <input type="password" placeholder="password" required><br>
+        <hr>
+        <br>
+
+
+
+        <pre>Radio button</pre>
+        <label>Gender</label>
+        <br>
+        <label>Male</label><input type="radio" name="male" checked>
+        <label for="">female</label><input type="radio" name="male">
+        <hr>
+        <br>
+
+
+
+        <pre>check-box</pre>
+        <br>
+        <input type="checkbox"> <label>I accept terms and conditon</label>
+        <hr>
+        <br>
+
+
+        <pre>Text area</pre>
+        <br>
+        <label>Text here</label>
+        <textarea placeholder="Type your message here"></textarea>
+        <hr>
+        <br>
+
+
+        <pre>Uploading file</pre>
+        <br>
+        <label>Add file <i>no file choosen comes by default</i></label>
+        <input type="file">
+        <hr>
+        <br>
+
+
+        <pre>Select (for drop down)</pre>
+        <br>
+        <label>Select model</label>
+        <select>
+            <option>Yes</option>
+            <option >no</option>
+
+        </select>
+        <hr>
+        <br>
+
+
+        <pre>button using submit type</pre>
+        <br>
+        <input type="submit" value="(submit) written in value">
+        <hr>
+        <br>
+
+
+        <pre>Pure button tag</pre>
+        <br>
+        <button type="submit">submit(name of button)</button><br>
+        <button type="reset">reset(name of reset button)</button>
+
+
+        <hr>
+        <br>
+        <pre>FIeldset++Legend</pre>
+        <br>
+        <fieldset>
+            <legend>This is how legend is used</legend>
+                <label>try</label>
+                <input type="text">
+
+        </fieldset>
+
+    </form>
+</body>
+</html>
